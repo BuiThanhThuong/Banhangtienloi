@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.ThanhToan">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:background="#F6A5C1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tbthanhttoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imthanhtoan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#B22222"
+                android:text="Thanh toán"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:textSize="25dp"
+        android:hint="Địa chỉ"
+        android:id="@+id/diachi"
+        app:layout_constraintTop_toBottomOf="@+id/tbthanhttoan"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layouten"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/diachi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tenthanhtoan"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:text="Tên khách hàng"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layoutsdt"
+        app:layout_constraintTop_toBottomOf="@+id/layouten"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:text="Số điên thoại: "
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/sdtthanhtoan"
+            android:textColor="@color/red"
+            android:text="Số điên thoại"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layoutmail"
+        app:layout_constraintTop_toBottomOf="@+id/layoutsdt"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:text="Email: "
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/mailthanhoan"
+            android:textColor="@color/red"
+            android:text="Email"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layouttongttien"
+        app:layout_constraintTop_toBottomOf="@+id/layoutmail"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+
+            android:text="Tổng tiền:"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tongtienthanhtoan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:text="Tổng tiền:"
+            android:textColor="@color/red"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/layouthinhmomo"
+        app:layout_constraintTop_toBottomOf="@+id/layouttongttien"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:layout_marginLeft="60dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/momo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+
+        app:layout_constraintTop_toBottomOf="@+id/layouthinhmomo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/red"
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vui lòng thanh toán đúng số tiền."/>
+        <TextView
+            android:textColor="@color/red"
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đơn hàng của bạn sẽ được xử lý sau 24h."/>
+    </LinearLayout>
+    <Button
+        android:backgroundTint="#DF2363"
+        android:text="Xác nhận"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/btnxacnhanmua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.DangKy"
+    android:background="#FBD3E8">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="40dp"/>
+
+
+        <EditText
+            android:id="@+id/sdtdk"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:ems="16"
+            android:inputType="phone"
+            android:hint="Số điện thoại"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/mkdk"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="16"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Mật khẩu"/>
+        <EditText
+            android:id="@+id/mkdk2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="16"
+
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Nhập lại mật khẩu"/>
+        <EditText
+            android:id="@+id/tenuser"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="16"
+
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Tên người dùng"/>
+        <EditText
+            android:id="@+id/gmail"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="16"
+            android:textSize="20dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="10dp"
+            android:hint="Gmail"/>
+        <Button
+            android:id="@+id/DangKy"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:text="Đăng ký"
+            android:backgroundTint="#E91E63"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.thongtinsanpham">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="#F396B6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ímvetrangchu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin sản phẩm"
+                android:textColor="#B22222"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/giohangfr"
+            android:layout_width="60dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp">
+
+            <com.nex3z.notificationbadge.NotificationBadge
+                android:id="@+id/solg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top|right">
+
+            </com.nex3z.notificationbadge.NotificationBadge>
+
+            <ImageView
+                android:id="@+id/giohang"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_shopping_cart_24"></ImageView>
+        </FrameLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imthongtin"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/neww" />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="260dp" >
+
+        <TextView
+            android:id="@+id/txttenmathang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tên mặt hàng"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="305dp" >
+
+        <TextView
+            android:textColor="#EF2316"
+            android:id="@+id/gia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/_150000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="340dp">
+        <TextView
+            android:text="Nhà cung cấp:"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="340dp">
+
+        <TextView
+            android:id="@+id/tennhacungcap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tên"
+            android:textSize="20dp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="600dp">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="600dp">
+
+        <Button
+
+            android:layout_gravity="bottom"
+            android:backgroundTint="#DF2363"
+            android:id="@+id/themgiohang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:text="Thêm vào giỏ hàng" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="400dp" >
+        <TextView
+
+            android:text="Mô tả: "
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="425dp">
+
+        <TextView
+            android:id="@+id/mota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp" />
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
